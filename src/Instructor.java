@@ -6,4 +6,9 @@ public class Instructor extends ASchoolElement {
   Instructor(String name) {
     super(name);
   }
+  
+  // returns true if this student is in more than one of this instructor's courses
+  boolean dejavu(Student c) {
+    return courses.filterByStudent(new ClassmatesPred(), c).length() > 1;
+  }
 }

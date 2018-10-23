@@ -9,7 +9,7 @@ public class Student extends ASchoolElement {
     this.id = id;
   }
 
-  // adds this student to the given course and
+  // EFFECT: adds this student to the given course and
   // adds the given course to this student
   void enroll(Course c) {
     c.addStudent(this);
